@@ -81,6 +81,9 @@
   ;;(print (:release_date (web/find-films "1")))
   ;;(print (:created (web/find-films "1")))
   ;;(print (:edited (web/find-films "1")))
+  ;;(print (web/find-films "0"))
+  ;;(print (web/find-people "0"))
+  ;;(print (web/find-starship "0"))
   (db/initial-data)
   (server/start 5949)
   

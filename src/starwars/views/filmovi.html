@@ -45,9 +45,18 @@ function clearText(field)
         
         <div id="templatemo_banner_content">
         	<div class="header_01">FILMOVI</div>
-			<p>Informacije o Star Wars filmovima [1-7]</p>
+			<p>Informacije o Star Wars filmovima</p>
 			<form method="post" action="/search-films">
-            <p><input type="text" name="search" /></p>
+			 <p><select  name="search">
+				<option value="1">--- Izaberite film ---</option>
+				<option id="film1" value="1">A New Hope</option>
+				<option id="film2" value="2">The Empire Strikes Back</option>
+				<option id="film3" value="3">Return of the Jedi</option>
+				<option id="film4" value="4">The Phantom Menace</option>
+				<option id="film5" value="5">Attack of the Clones</option>
+				<option id="film6" value="6">Revenge of the Sith</option>
+				<option id="film7" value="7">The Force Awakens</option>
+			</select> </p> 			
             <div class="button_01"><input type="submit" value="Prikazi"/></div>
 			</form>
         </div>	
