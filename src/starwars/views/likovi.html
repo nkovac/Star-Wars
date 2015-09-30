@@ -77,6 +77,8 @@ function clearText(field)
 				<section >Godina rodjenja: </section>
 				<section >Kreiran: </section>
 				<section >Editovan: </section>
+				<section >Film u kojem se pojavljuje: </section>
+				<section >Starship: </section>
 			</td>	
 			<td style="margin-left: 20px"  >
 				<section id="ime1" class="naziv"></section>
@@ -89,6 +91,16 @@ function clearText(field)
 				<section id="godina"></section>
 				<section id="kreiran"></section>
 				<section id="editovan"></section>
+				<section ><form method="post" action="/search-films">
+											<input id="filmvalue1" type="hidden" name="search" value="1"/>
+											<div class="button_02"><input type="submit" value="Info"/></div>
+											</form>
+											</section>
+				<section ><form method="post" action="/search-starship">
+											<input id="starshipvalue1" type="hidden" name="search" value="9"/>
+											<div class="button_02"><input type="submit" value="Info"/></div>
+											</form>
+											</section>
 			</td>	
 			</tr>
 			</table>

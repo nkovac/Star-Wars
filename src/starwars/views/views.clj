@@ -90,8 +90,9 @@
   [:#godina] (html/content (:birth_year lik))
   [:#kreiran] (html/content (:created lik))
   [:#editovan] (html/content (:edited lik))
-  ;; TODO: Povezati sa drugim stranama: Npr Luke Skywalker ima 2 starshipa koja je vozio. 
-  ;; TODO; Povezati njegov atribut starships sa stranicom Starships koja otvara kliknuti brod.
+  [:#filmvalue1] (html/set-attr :value (subs (get (:films lik) 0) 26 27))
+  [:#starshipvalue1] (html/set-attr :value (subs (get (:starships lik) 0) 30 32))
+  ;; TODO: Refaktorisati ovo da bude stabilnije...
   
   
   
